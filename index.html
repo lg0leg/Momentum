@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="player visible-block" id="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon" id="playPouse"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+
+        <div class="custom-controls-audio">
+          <div class="time-and-volume">
+            <div class="time-cs-audio">
+              <div class="current-cs-audio">0:00</div>
+              <div class="divider-cs-audio">&nbsp;/&nbsp;</div>
+              <div class="length-cs-audio">0:00</div>
+            </div>
+            <div class="volume-container">
+              <div class="volume-slider">
+                <div class="volume-percentage"></div>
+              </div>
+              <div class="volume-button volume-button-unmute"></div>
+            </div>
+          </div>
+
+          <div class="timeline-audio">
+            <div class="progress-audio"></div>
+          </div>
+        </div>
+
+        <ul class="play-list"></ul>
+      </div>
+
+      <div class="weather visible-block">
+        <input
+          type="text"
+          class="city"
+          value="Minsk"
+          placeholder="[Enter city]"
+        />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+
+      <time class="time visible-block"></time>
+      <date class="date visible-block"></date>
+
+      <div class="greeting-container visible-block">
+        <span class="greeting"></span>
+        <input
+          type="text"
+          class="name"
+          placeholder="[Enter name]"
+          maxlength="16"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="quote-container visible-block">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+      </div>
+
+      <!-- <div class="app-settings visible-settings"> -->
+      <div class="app-settings unvisible-settings">
+        <div class="lang-app">
+          <div class="lang-app-text-1">Ru</div>
+          <div class="lang-app-switch-btn switch-on"></div>
+          <div class="lang-app-text-2">Eng</div>
+        </div>
+
+        <div class="block-visibility">
+          <div class="visibility-title" id="visibility-title">
+            Select blocks:
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-time-text">Time</div>
+            <div class="visibility-item-toggle">
+              <div class="switch-btn-vis switch-on-vis" id="slider-time"></div>
+            </div>
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-date-text">Date</div>
+            <div class="visibility-item-toggle">
+              <div class="switch-btn-vis switch-on-vis" id="slider-date"></div>
+            </div>
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-greetings-text">
+              Greetings
+            </div>
+            <div class="visibility-item-toggle">
+              <div
+                class="switch-btn-vis switch-on-vis"
+                id="slider-greetings"
+              ></div>
+            </div>
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-quotes-text">
+              Quotes
+            </div>
+            <div class="visibility-item-toggle">
+              <div
+                class="switch-btn-vis switch-on-vis"
+                id="slider-quotes"
+              ></div>
+            </div>
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-weather-text">
+              Weather
+            </div>
+            <div class="visibility-item-toggle">
+              <div
+                class="switch-btn-vis switch-on-vis"
+                id="slider-weather"
+              ></div>
+            </div>
+          </div>
+
+          <div class="visibility-item">
+            <div class="visibility-item-desc" id="settings-player-text">
+              Audio Player
+            </div>
+            <div class="visibility-item-toggle">
+              <div
+                class="switch-btn-vis switch-on-vis"
+                id="slider-audio-player"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-app-settings"></div>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
