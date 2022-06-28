@@ -137,7 +137,6 @@ body {
   margin-left: 10px;
   min-width: 250px;
   height: 40px;
-  /* background-color: lavender; */
 }
 
 .time-and-volume {
@@ -146,7 +145,6 @@ body {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  /* background-color: khaki; */
 }
 
 .time-cs-audio {
@@ -179,7 +177,6 @@ body {
   margin-left: 10px;
   width: 20px;
   height: 20px;
-  /* background-color: lightseagreen; */
   background-size: 20px 20px;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -305,7 +302,6 @@ body {
 }
 
 .time {
-  /* min-height: 124px; */
   height: 124px;
   margin-bottom: 10px;
   font-family: 'Arial-MT';
@@ -390,8 +386,6 @@ body {
   height: 300px;
   border-radius: 10px;
   background: rgba(218, 218, 218, 1);
-  /* cursor: pointer; */
-  /* background: red; */
 }
 
 .unvisible-settings {
@@ -432,7 +426,6 @@ body {
   position: relative;
   width: 100%;
   height: 50px;
-  /* background: #000; */
   border-bottom: 1px solid whitesmoke;
 }
 
@@ -510,7 +503,6 @@ body {
   width: 100%;
   height: 30px;
   display: flex;
-  /* background: #000; */
 }
 
 .visibility-item-desc {
@@ -520,13 +512,11 @@ body {
   color: rgba(32, 73, 105, 1);
   font-weight: bold;
   user-select: none;
-  /* background: green; */
 }
 
 .visibility-item-toggle {
   width: 40%;
   height: 100%;
-  /* background: cornflowerblue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,14 +581,43 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    min-width: 280px;
+    background-size: auto;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .custom-controls-audio {
+    margin-bottom: 18px;
+    margin-left: 0px;
+    min-width: 50px;
+    width: 180px;
+    height: 40px;
+  }
+
+  .volume-slider {
+    width: 80px;
+  }
+
+  .volume-button {
+    display: none;
+  }
+
+  .slider-icon {
+    top: 50%;
+    margin-top: -5px;
+  }
+
   .time {
-    min-height: 80px;
-    font-size: 72px;
+    height: 90px;
+    font-size: 60px;
   }
 
   .greeting-container {
-    min-height: 40px;
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .greeting {
@@ -606,7 +625,25 @@ body {
   }
 
   .name {
-    font-size: 32px;
+    max-width: 40%;
+    font-size: 24px;
     padding: 5px;
+  }
+
+  .quote {
+    padding-left: 0px;
+  }
+
+  .app-settings {
+    left: 30px;
+    bottom: 147px;
+  }
+
+  .icon-app-settings {
+    position: absolute;
+    left: 30px;
+    bottom: 107px;
+    width: 30px;
+    height: 30px;
   }
 }
